@@ -1,0 +1,39 @@
+I own an ecommerce website built on Shopify
+
+The store is called Brookfield Comfort and the URL is https://brookfieldcomfort.com
+
+We sell on both Shopify and Amazon FBA
+
+The main product we sell are shoes, and I have data indicating products and sales
+
+The database schema can be found ini file "bc_database.sql"
+
+Some main tables are, but not limited to:
+skusummary - This holds the main shoe information. Primary key is groupid
+skumap - contains the lower details of a shoe. ie. All the sizes and kinked by groupid. The primary key here is "code" which in most cases is the groupid with the size appended in a standard 2 digits at the end, after a "-". e.f.M404A-10
+localstock - holds the locations of the products locally
+sales - List of sales
+price track - Daily cut of available inventory and any sales made for the groupid. Intention is to use this to identify optimum price
+
+The project target is to produce a web dashboard for accessing reports with SQL in a backend PostgreSQL database
+
+I want to be able to start with the best performaers report of which I have the SQL
+
+From there, filter to indicate the number of days, brand, sales etc. You can find the first main SQL statement file called "starting_sql_statement"
+
+Taking this further, I will need to be able to drill down the groupid and identify the details found in the price_track table which indicates what sales were made on what day
+
+I want to build this dashboard in parts, starting small with just the query with the structure in mind to buold more reports and introduce graphs in future.
+
+IMPORTANT: The main intention of this whole project is to allow me to identify data which will help me make better business decisions. ie. Which shoes are selling fast, too cheap, too expensive etc etc
+
+
+The UI and UX design is your responisbility but it will need to be clean and structured accordingly so we can make it look amazing at a later time with animation, styling and modern looks without breaking functionality or navigation.
+
+For now Im expecting it to be a simple left side menu and main display reports area
+
+regarding the tech stach - I woul dlike you to recommend one. I have a VPS server on Linux and develop on Windows. I will want this browser based front end.
+
+For security, I will also want to require a login in future but not essential to start
+
+
